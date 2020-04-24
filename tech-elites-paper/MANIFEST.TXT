@@ -1,0 +1,31 @@
+CS Undergrad Survey Data/combinedwithstanfordugrads.dta (application/x-stata-14) 981636 bytes.
+Codebooks/combined_anon.dta and combinedwithstanfordugrads.dta Codebooks.pdf (application/pdf) 120695 bytes.
+Tech Donor and Public Survey Data/combined_anon.dta (application/x-stata-14) 959633 bytes.
+Codebooks/f400_wtech.dta Codebook.pdf (application/pdf) 20006 bytes.
+Other Data/f400_wtech.dta (application/x-stata-14) 1297700 bytes.
+Analysis Code/Figure 1a, 1c, and 1e.do (application/x-stata-syntax) 1220 bytes.
+Analysis Code/Figure 1b and 1d.do (application/x-stata-syntax) 705 bytes.
+Analysis Code/Figure 2.R (type/x-r-syntax) 2569 bytes.
+Analysis Code/Figure 3.R (type/x-r-syntax) 1641 bytes.
+Analysis Code/Figure 4 and 5.R (type/x-r-syntax) 5369 bytes.
+Analysis Code/Figure 6.R (type/x-r-syntax) 3455 bytes.
+Analysis Code/Figure 7, OA3, OA4, OA5, OA6, OA8.R (type/x-r-syntax) 6205 bytes.
+Analysis Code/Figure 8.R (type/x-r-syntax) 2364 bytes.
+Analysis Code/Figure OA7.R (type/x-r-syntax) 3177 bytes.
+Analysis Code/Figure OA9.R (type/x-r-syntax) 2953 bytes.
+Codebooks/opensecrets.dta Codebook.pdf (application/pdf) 18267 bytes.
+Other Data/opensecrets.dta (application/x-stata-14) 2615 bytes.
+Data Prep Code - Run First/Prepare CS Undergrad Survey.do (application/x-stata-syntax) 7352 bytes.
+Data Prep Code - Run First/Prepare Tech, Donor, and Public Surveys.do (application/x-stata-syntax) 8838 bytes.
+README.txt (text/plain) 3735 bytes.
+Analysis Code/Table 2 and 3.do (application/x-stata-syntax) 744 bytes.
+Analysis Code/Table 5.do (application/x-stata-syntax) 1145 bytes.
+Analysis Code/Table 6.do (application/x-stata-syntax) 1237 bytes.
+Analysis Code/Table 7, OA6, OA16.do (application/x-stata-syntax) 1912 bytes.
+Analysis Code/Table OA1, OA2, OA13.do (application/x-stata-syntax) 677 bytes.
+Analysis Code/Table OA14 and OA15.do (application/x-stata-syntax) 458 bytes.
+Analysis Code/Table OA17.do (application/x-stata-syntax) 1024 bytes.
+Table OA3, OA4, OA8.do (application/x-stata-syntax) 2507 bytes.
+Analysis Code/Table OA5.do (application/x-stata-syntax) 345 bytes.
+Analysis Code/Table OA7.do (application/x-stata-syntax) 653 bytes.
+Analysis Code/Table OA9.do (application/x-stata-syntax) 1350 bytes.

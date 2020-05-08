@@ -1,7 +1,7 @@
 ---
 title: "Replication of \"Predispositions and the Political Behavior of American Economic Elites: Evidence from Technology Entrepreneurs\""
 author: "Michelle Gao"
-date: "April 17, 2020"
+date: "May 8, 2020"
 output: 
   bookdown::pdf_document2:
     toc: False
@@ -50,11 +50,11 @@ dir_create("figures")
 
 # Abstract
 
-Broockman, Ferenstein, and Malhotra (2019) show that technology entrepreneurs have a unique set of political beliefs: they are liberal on social issues, globalism, and redistribution, but very conservative on government regulation. The replication succeeded with the exception of some discrepancies in scaling variables. An extension that used linear regression to formally test whether certain values or predispositions, such as cosmopolitanism and authoritarianism, could predict policy preferences in particular domains, such as support for globalism and social issues, added support to the authors' ultimate claim that tech entrepreneurs' unique political beliefs stem from unique underlying philosophical values. Analyzing technology elites' political beliefs is an increasingly timely task as the tech industry becomes more influential in politics.
+Broockman, Ferenstein, and Malhotra (2019) show that technology entrepreneurs have a unique set of political beliefs: they are liberal on social issues, globalism, and redistribution, but very conservative on government regulation. The replication succeeded in generating these results. An extension that used linear regression to formally test whether certain values or predispositions, such as cosmopolitanism and authoritarianism, could predict policy preferences in particular domains, such as support for globalism and social issues, added support to the authors' ultimate claim that tech entrepreneurs' unique political beliefs stem from unique underlying philosophical values. Analyzing technology elites' political beliefs is an increasingly timely task as the tech industry becomes more influential in politics.
 
 # Introduction
 
-Broockman, Ferenstein, and Malhotra (2019) describe the political behavior of technology elites, who are growing increasingly wealthy and politically influential. They use four original surveys -- of technology entrepreneurs in which the modal respondent is a millionaire who founded or runs a tech industry company with around 100 employees; of partisan donors with an oversample of top 1\% donors; and subsamples of wealthy individuals and partisans in the mass public from Survey Sampling International. They demonstrate that technology entrepreneurs support liberal redistributive, social, and globalist policies, but conservative regulatory policies. This is a unique bundle among other economic elites that the authors speculate stem from technology entrepreneurs’ unique predispositions. Technology entrepreneurs believe more strongly in markets and entrepreneurship than general Democrats and large Democratic donors: they are more opposed than Democrats to regulation regardless of the industry and generally prefer private to public-sector management. Uniquely among groups, they support redistribution but oppose regulation. Thus, despite some popular belief, they are not very likely to be libertarians. Furthermore, the authors compared the results of entrepreneurs to Stanford CS and biology majors to show that these political predispositions are apparent in STEM undergraduates before they enter the tech workforce. Like the general public, economic elites’ political views stem from values and predispositions, and if similar-minded people tend to cluster in similar industries, views of elites can be distinguished among industries. The authors surmise that their findings provide evidence of looming changes in the Democratic Party, since technology elites are have the financial means to influence candidates but are opposed to many government interventions that have been the standard Democratic answer to inequality and receive support from traditionally Democratic interest groups such as unions.
+Broockman, Ferenstein, and Malhotra (2019) describe the political behavior of technology elites, who are growing increasingly wealthy and politically influential. They use four original surveys -- of technology entrepreneurs in which the modal respondent is a millionaire who founded or runs a tech industry company with around 100 employees; of partisan donors with an oversample of top 1\% donors; and subsamples of wealthy individuals and partisans in the mass public from Survey Sampling International. They demonstrate that technology entrepreneurs support liberal redistributive, social, and globalist policies, but conservative regulatory policies. This is a unique bundle among other economic elites that the authors speculate stem from technology entrepreneurs’ unique predispositions. Technology entrepreneurs believe more strongly in markets and entrepreneurship than general Democrats and large Democratic donors: they are more opposed than Democrats to regulation regardless of the industry and generally prefer private to public-sector management. Uniquely among groups, they support redistribution but oppose regulation. Thus, despite some popular belief, they are not very likely to be libertarians. The authors surmise that their findings provide evidence of looming changes in the Democratic Party, since technology elites are have the financial means to influence candidates but are opposed to many government interventions that have been the standard Democratic answer to inequality and receive support from traditionally Democratic interest groups such as unions.
 
 I was able to replicate this paper using data found on [Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OGVWDE). I used R for the replication, at times adapting the authors' Stata code into R.^[All analysis for this paper is available at https://github.com/michgao87/tech-politics-replication]
 
@@ -66,22 +66,22 @@ The authors build on literature about the political beliefs of people in general
 
 The authors also build on literature about the history of the US technology industry. Markoff (2005) has investigated the industry's emergence of 1950s and 1960s counterculture and thus its continued appeal to individuals who like disrupting status quos. 
 
-Broockman, Ferenstein, and Malhotra's work remains the preeminent paper cited on the topic of what tech entrepreneurs believe about politics. Further research has been conducted by Ferenstein (2015), who finds that there is a new political ideology coming out of Silicon Valley: these technologists combine libertarians' value of meritocracy with liberals' value of collectivism. They do not want government to protect citizens from capitalism, but rather to invest in citizens and fund competition so that the private sector can solve social problems. These views arise from their extreme idealism and optimism in humans. Though they are often mistakenly stereotyped as libertarians, they tend to identify and support Democrats because they do support some federal programs. Nevertheless, they are different than Democrats because they prioritize equality of opportunity not outcome and want government to be run like a business. Ferenstein argues that these Civicrats are already exerting a greater force on the Democratic party and American politics in general.
+Broockman, Ferenstein, and Malhotra's work remains the preeminent paper cited on the topic of what tech entrepreneurs believe about politics. Other research has been conducted by Ferenstein (2015), who finds that there is a new political ideology coming out of Silicon Valley: these technologists combine libertarians' value of meritocracy with liberals' value of collectivism. They do not want government to protect citizens from capitalism, but rather to invest in citizens and fund competition so that the private sector can solve social problems. These views arise from their extreme idealism and optimism in humans. Though they are often mistakenly stereotyped as libertarians, they tend to identify and support Democrats because they do support some federal programs. Nevertheless, they are different than Democrats because they prioritize equality of opportunity not outcome and want government to be run like a business. Ferenstein argues that these Civicrats are already exerting a greater force on the Democratic party and American politics in general.
 
 # Paper Review
 
-Broockman, Ferenstein, and Malhotra (2019) seek to disprove the assumption that economic elites are homogenous and that increases in their political power necessarily increases inequality across the board—specifically, they focus on describing the political behavior of technology elites, who are growing increasingly wealthy and politically influential. They use four original surveys—of technology entrepreneurs in which the modal respondent is a millionaire who founded or runs a tech industry company with around 100 employees; of partisan donors with an oversample of top 1\% donors; and subsamples of wealthy individuals and partisans in the mass public from Survey Sampling International. Throughout the paper, they compare the political beliefs of technology entrepreneurs to these other groups. They demonstrate that technology entrepreneurs support liberal redistributive, social, and globalist policies, but conservative regulatory policies. This is a unique bundle among other economic elites that the authors speculate stem from technology entrepreneurs’ unique predispositions. Technology entrepreneurs believe more strongly in markets and entrepreneurship than general Democrats and large Democratic donors—they are more opposed than Democrats to regulation regardless of the industry and generally prefer private to public-sector management. Uniquely among groups, they support redistribution but oppose regulation. Thus, despite some popular belief, they are not very likely to be libertarians. Furthermore, the authors compared the results of entrepreneurs to Stanford CS and biology majors to show that these political predispositions are apparent in STEM undergraduates before they enter the tech workforce. Like the general public, economic elites’ political views stem from values and predispositions, and if similar-minded people tend to cluster in similar industries, views of elites can be distinguished among industries. The authors surmise that their findings provide evidence of looming changes in the Democratic Party, since technology elites are have the financial means to influence candidates but are opposed to many government interventions that have been the standard Democratic answer to inequality and receive support from traditionally Democratic interest groups such as unions.
-
-
-# Replication
-
-There is one linear regression model that I was unable to replicate fully. In Table 6: "Technology Entrepreneurs No More Likely to Oppose Regulating Technology Products Than Democratic Groups," my linear regression contains the wrong coefficients relating to the "tech product/service" indicator variable. However, the significance levels were similar. 
+The authors use linear regressions not to create an overarching model for the paper, but to test further hypotheses relating to technology entrepreneurs' distinctive views. Using regression, they find that tech entrepreneurs' opposition to regulation is not just out of self-interest to avoid regulation of their own industry. One regression shows that even though tech elites are more likely to oppose tech regulation than other industries, this is actually a widespread belief among Americans, and the difference is not statistically significant. The authors also find that no matter the industry, tech elites are more opposed to regulation than Democrats. Their final regression supports their hypothesis that tech elites' values on free markets and government intervention spur their distrust of regulation even when tech interests are not pertinent. Compared to Democrats, they are more likely to prefer private to public sector management, are more skeptical that the govenment runs social programs well, and  have a much more positive view of the role of entrepreneurship to the economy.  
 
 # Extension
 
-My extension uses linear regression to confirm the relationship between policy preferences and values/predispositions among technology entrepreneurs. The paper presents descriptive evidence that this relationship exists by averaging tech entrepreneurs' policy preferences on four key areas -- (liberalism on) social issues, (support for) globalism, (support for) redistribution, and (support for) regulation and averaging their values on four dimensions -- authoritarianism, cosmopolitanism, racial resentment, and value of entrepreneurs to the economy. Relative to other groups such as the general public, Democratic and Republican donors, and the Democratic and Republican mass public, tech entrepeneurs have a unique bundle of views in both policies and values. However, it appears that their views on policies and values are similar to each other, as are other groups. The authors cite literature that has shown a relationship between those predispositions and policy preferences: for example, that views on authoritarianism are correlated with views on social issues among the general public.  
+My extension uses linear regression to confirm the relationship between policy preferences and values/predispositions among technology entrepreneurs. The paper presents descriptive evidence that this relationship exists by averaging tech entrepreneurs' policy preferences on four key areas -- (liberalism on) social issues, (support for) globalism, (support for) redistribution, and (support for) regulation and averaging their values on four dimensions -- authoritarianism, cosmopolitanism, racial resentment, and value of entrepreneurs to the economy. Relative to other groups such as the general public, Democratic and Republican donors, and the Democratic and Republican mass public, tech entrepreneurs have a unique bundle of views in both policies and values. 
 
-For my extension, I look further at this hypothesis by running a linear regression to see whether values can predict policy preferences for tech entrepreneurs. More specifically, I run four separate regressions: whether authoritarianism can predict liberalism on social issues, cosmopolitanism can predict support for globalism, racial resentment can predict support for redistribution, and value of entrepreneurs can predict support for regulation. The hypothesis that would best support the authors' conclusions is that the coefficients in all four regressions will be significant. 
+In policy areas, on social issues, globalism, and redistribution, tech entrepreneurs are more supportive than the Democratic public, educated Democrats, and Democratic donors. Yet on the topic of regulation (the questions included "government regulation of business does more harm than good" and "regulate 'gig' workers like regular workers"), tech entrepreneurs are significantly less supportive than those same groups of Democrats. On regulation, tech entrepreneurs actually resemble Republicans much more. 
+
+In values and predispositions, tech elites seem to resemble Democratic donors, in their low authoritarianism scores and low racial resentment, which correspond to high liberalism on social issues and support for redistribution. They also resemble economic elites in both parties with their high cosmopolitanism, which for them, similarly to Democratic donors, corresponds with high globalism. But tech entrepreneurs' unsurprising high value of entrepreneurs to the economy differs greatly from Democratic elites. 
+
+The authors cite literature that has shown a relationship between those predispositions and policy preferences: for example, that views on authoritarianism are correlated with views on social issues among the general public. Thus, for my extension, I run a linear regression to more formally test whether values can predict policy preferences for tech entrepreneurs. More specifically, I run four separate regressions: whether authoritarianism can predict liberalism on social issues, cosmopolitanism can predict support for globalism, racial resentment can predict support for redistribution, and value of entrepreneurs can predict support for regulation. The hypothesis that would best support the authors' conclusions is that the coefficients in all four regressions will be significant.
+
 
 ```{r extension, warning = F, message = F, eval = T}
 
@@ -95,15 +95,16 @@ race_reg <- lm(redistribution ~ racialresentment, data = ext)
 cosmo_reg <- lm(globalism ~ cosmopolitanism2, data = ext)
 auth_reg <- lm(social ~ authoritarianism, data = ext)
 
+
 ```
 
-```{r extension_output, eval = T, results = "asis"}
+```{r ext_tech_reg, eval = T, results = "asis", fig.pos="H"}
 stargazer(auth_reg, cosmo_reg, race_reg, entre_reg,
           type = "latex", header = F, no.space = T, notes.align = "l", digits = 2,
           keep.stat = c("n", "rsq"),
-          covariate.labels = c("Authoritarianism",
+          covariate.labels = c("1 - Authoritarianism",
                                "Cosmopolitanism",
-                               "Racial Resentment",
+                               "1 - Racial Resentment",
                                "\\shortstack{Value of \\\\ Entrepreneurs}"),
           model.numbers = F,
           column.labels = c("Social Issues", "Globalism", "Redistribution",
@@ -115,10 +116,15 @@ stargazer(auth_reg, cosmo_reg, race_reg, entre_reg,
 )  
 ```
 
-This table suggests that there is a strong relationship between values and policy preferences. All the coefficients are significant at the 0.05 level, meaning that in 95\% of the time, we would expect the true coefficient to fall within that interval. Furthermore, as expected, all coefficients are positive. As a reminder, the responses for values are scaled from 0-1 (with intermediate options as decimals) where higher values represent the generally "positive" moral value to have. So values closer to 1 represent high cosmopolitanism and value of entrepreneurs, but low authoritarianism and low racial resentment. Thus, as expected, the extension table shows that lower authoritarianism and racial resentment are correlated with higher liberalism on social issues and support for redistribution; whereas higher cosmopolitanism and value of entrepreneurs are associated with higher support for globalism and regulation, among tech entrepeneurs. 
+This table suggests that there is a strong relationship between values and policy preferences. All the coefficients are significant at the 0.05 level. This means we can reject the null hypothesis and conclude that there does exist a correlation between the predictor variable and the response variable. Furthermore, as expected, all coefficients are positive. Lower authoritarianism and racial resentment are correlated with higher liberalism on social issues and support for redistribution; whereas higher cosmopolitanism and value of entrepreneurs are associated with higher support for globalism and regulation, among tech entrepreneurs. 
 
-Of course, linear regression is not a perfect method. Because this is not a randomized experiment, it can only show correlation, not causation. Furthermore, the low R-squared values suggest that the predictor terms do not actually explain the response variables very much. Relying too much on the result of significant variables because of a p-value under 0.05 may not be best practice.Furthermore, it is unclear how validly the questions asked in the survey represent the values trying to be measured. Nevertheless, when this result is taken as a whole with the rest of the paper, it does present more evidence backing up the authors' claim that tech entrepreneurs' unique set of policy beliefs stems from their unique underlying values and predispositions. 
+Of course, linear regression is not a perfect method. Because this is not a randomized experiment, it can only show correlation, not causation. Furthermore, the low R-squared values suggest that the predictor terms do not actually explain the response variables very much. Nevertheless, when this result is taken as a whole with the rest of the paper, it does present more evidence backing up the authors' claim that tech entrepreneurs' unique set of policy beliefs stems from their unique underlying values and predispositions. 
 
+# Conclusion
+
+I was able to replicate the work of Broockman, Ferenstein, and Malhotra (2019). Technology elites are uniquely supportive of redistribution but opposed to regulation. Furthermore, they are not more likely to oppose regulation of the tech industry specifically, suggesting that their opposition is borne out of more than self-interest. Compared to Democrats, they are more likely to prefer private to public sector management, are more skeptical that the govenment runs social programs well, and  have a much more positive view of the role of entrepreneurship to the economy.  
+
+My extension added support to the authors' secondary hypothesis that values and predispositions help explain tech entrepreneurs' unique political beliefs. The significant coefficients in the added linear regression suggests that their pairing up of values and policy beliefs (authoritarianism with social issues, cosmopolitanism with globalism, racial resentment with redistribution, and value of entrepreneurship with regulation) was an effective methodology. 
 
 # Appendix
 
@@ -336,7 +342,6 @@ grid.arrange(rasterGrob(fig_3a), rasterGrob(fig_3b), rasterGrob(fig_3c),
 
 ```
 
-(ref:fig4) Figure 4 sums up the main finding of the paper -- technology entrepreneurs' distinctive bundle of policy views. Technology entrepreneurs have liberal views in many areas. On social issues, globalism, and redistribution, they are more supportive than the Democratic public, educated Democrats, and Democratic donors. Yet on the topic of regulation (the questions included "government regulation of business does more harm than good" and "regulate 'gig' workers like regular workers"), tech entrepreneurs were significantly less supportive than those same groups of Democrats.  On regulation, tech entrepreneurs actually resemble Republicans much more. 
 
 ```{r fig4, warning = F, message = F, fig.cap="(ref:fig4)"}
 
@@ -766,7 +771,10 @@ grid.arrange(rasterGrob(fig_7),
 
 ```
 
-```{r table5}
+Here is a sample replication of Table 5, a regression that helps validate the authors' hypothesis that tech entrepreneurs' distrust of regulation does not apply merely to their own industry. All subsets, whether Democrats, Republicans, or tech entrepreneurs, are more likely to oppose regulation of tech than other industries. 
+
+
+```{r table5, eval = T, fig.pos="H"}
 
 # Replication regression table for likelihood to oppose regulation by industry
 
@@ -817,7 +825,9 @@ full_reg <- lm(govt_reg_business_harm_standard ~ brand.tech * sampletext +
 
 ```
 
-```{r table5output, results = "asis"}
+\newpage 
+
+```{r table5output, results = "asis", eval = T, fig.pos="H", out.width = "90%"}
 
 # Use stargazer to replicate regression table from models created above
 stargazer(tech_reg, dem_donors_reg, dem_pub_reg, full_reg,
@@ -846,7 +856,11 @@ stargazer(tech_reg, dem_donors_reg, dem_pub_reg, full_reg,
           table.layout = "=dc-!ts-n",
           title = "Table 5: Technology Entrepreneurs More Likely to Oppose Regulation of Technology, and Less Likely to Oppose of Other Industries, But So Are Other Democrats"
 )
+
+knitr::include_graphics("tech-elites-paper/table5.png")
 ```
+
+
 
 ```{r table6, warning = F, message = F}
 

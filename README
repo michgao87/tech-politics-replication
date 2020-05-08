@@ -1,0 +1,9 @@
+Overview of files:
+
+prep_data.R: Run this file first to clean data as specified by authors 
+
+tech-politics-replication.Rmd: Then run this file to replicate the original paper and produce full extesnion project
+
+figures: Folder containing all replicated tables and figures 
+
+tech-elites-paper: Folder containing the original paper and all materials from the authors' Dataverse 
